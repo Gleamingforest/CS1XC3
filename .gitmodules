@@ -4,3 +4,6 @@
 [submodule "activity-1"]
 	path = activity-1
 	url = https://github.com/Gleamingforest/activity-1
+[submodule "L08/activity2"]
+	path = L08/activity2
+	url = https://github.com/Gleamingforest/activity2
