@@ -10,3 +10,6 @@
 [submodule "L08/activity-1"]
 	path = L08/activity-1
 	url = https://github.com/Gleamingforest/activity-1
+[submodule "L08/CS1XC3_L08_P3"]
+	path = L08/CS1XC3_L08_P3
+	url = https://github.com/Gleamingforest/CS1XC3_L08_P3
