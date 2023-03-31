@@ -5,6 +5,8 @@ SRC_DIR = src
 DOC_DIR = documentation
 SUBDOC_DIR = documentation/docs/
 
+
+
 main : $(DOC_DIR) $(SUBDOC_DIR) docs $(SRC_DIR)/main.c $(BUILD_DIR)/student.o $(BUILD_DIR)/course.o
 	./scripts/buildbash
 	$(CC) $(CFLAGS) -o $@ $(SRC_DIR)/main.c $(BUILD_DIR)/student.o $(BUILD_DIR)/course.o
