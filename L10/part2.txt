@@ -1,0 +1,15 @@
+1. find ./ -name "*.tex"
+2. find ./ -name "*.tex" -not -name "Template.tex"
+3. find ./ -name "*.tex" -exec wc -l {} \;
+4. find ./ -name "*.tex" -o -name "*.pdf" -o -name "*.toc"
+5. find ./ -type f -regex ".*/Topic_[7-9][^/]*\.pdf" -o -regex ".*/Topic_[1-9][0-9][^/]*\.pdf"
+6. find ./ -type f -name "*~" -print0 | xargs -0 rm
+7. find ./ -type f -name "#*#" -print0 | xargs -0 rm
+8. find ./ -type f -name ?????????? -name *.png -or -name ?????????? -name *.jpg -or -name ?????????? -name *.bmp -or -name ?????????? -name *.webp >> goodFiles.txt
+9. find ./ -type f -name "*.log" -exec cat {} + > allTheLogs.log
+10. find ./ -type f -name *C*.aux | sed -n '10 p'
+11. find ./ -type f -name *.sh | xargs chmod +x
+12. grep -rnw './SLIDES/' -e ' and ' | head -10 >> ./allheads/txt
+13. find . -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" \) -print0 | xargs -0 rm
+14. cat filenames.txt
+15. find ./ -type f -name $(<< allTheGlobs.txt)v
